@@ -1,0 +1,9 @@
+# Ablation: remove the codec-residual subspace from the head.
+#
+# The paper's headline ablation. Equivalent to ST_ABL_CODEC_WEIGHT=0.
+# Measured: FPR95 2.697142857142857 against the full model's 1.1428571428571428,
+# so the channel is worth 1.554 points -- while closed-set accuracy moves the
+# other way by 0.11 (99.451 vs 99.337). It buys rejection, not attribution.
+# Target: results/ablation/no_codec.json
+model:
+  codec_weight: 0.0

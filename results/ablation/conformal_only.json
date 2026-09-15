@@ -1,0 +1,19 @@
+{
+  "split_seed": 42,
+  "fit_seed": 0,
+  "results": {
+    "mlaad_v5": {
+      "fpr95": 1.2571428571428571,
+      "ood_eer": 4.434285714285714,
+      "id_acc": 99.33714285714285,
+      "n_known_classes": 65,
+      "n_eval": 9620,
+      "n_eval_id": 4375,
+      "n_eval_ood": 5245
+    }
+  },
+  "sota": {
+    "mlaad_v5_fpr95": 3.36,
+    "stopa_unknown_atk_eer": 16.43
+  }
+}

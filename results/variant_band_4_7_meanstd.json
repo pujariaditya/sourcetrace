@@ -1,0 +1,14 @@
+{
+ "variant": "band_4_7_meanstd",
+ "split_seed": 42,
+ "fit_seed": 0,
+ "_note": "Re-extracted WavLM block; sig+codec spliced from the shipped cache. Compare these arms only against each other, never against results/ablation/.",
+ "results": {
+  "mlaad_v5": {
+   "fpr95": 1.0742857142857143,
+   "ood_eer": 3.5428571428571427,
+   "n_known_classes": 65,
+   "n_eval": 9620
+  }
+ }
+}
