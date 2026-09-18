@@ -1,0 +1,30 @@
+{
+  "split_seed": 42,
+  "fit_seed": 0,
+  "config": null,
+  "results": {
+    "stopa": {
+      "unknown_atk_eer": 9.272785011114639,
+      "six_eers": {
+        "ATK": {
+          "known": 9.645125436646557,
+          "unknown": 9.272785011114639
+        },
+        "AM": {
+          "known": 9.645125436646557,
+          "unknown": 9.272785011114639
+        },
+        "VM": {
+          "known": 5.447496559754417,
+          "unknown": 10.942481740234994
+        }
+      },
+      "n_tee": 33200,
+      "n_trials": 629800
+    }
+  },
+  "sota": {
+    "mlaad_v5_fpr95": 3.36,
+    "stopa_unknown_atk_eer": 16.43
+  }
+}

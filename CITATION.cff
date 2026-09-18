@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this software or its released checkpoints, please cite it."
+title: "sourcetrace: open-set audio deepfake attribution with neural codec residuals (CORE)"
+version: 1.0.0
+date-released: 2026-08-19
+license: MIT
+repository-code: "https://github.com/pujariaditya/sourcetrace"
+abstract: >-
+  Attribute a synthetic speech clip to the generator that produced it, or reject
+  it as a generator never seen in training. A frozen WavLM-Large front-end feeds
+  a small gated head; the distinguishing ingredient is a neural-codec
+  reconstruction residual, 33 numbers taken off the waveform the speech model
+  never sees. On the MLAAD v5 family-level open-set protocol it reaches 0.50%
+  FPR95 against a published 3.36%, and the abstention rule reports its own
+  measured coverage rather than discrimination alone. All figures are
+  single-seed point estimates.
+authors:
+  - family-names: Pujari
+    given-names: Aditya
+keywords:
+  - audio-deepfake
+  - source-tracing
+  - open-set-recognition
+  - neural-codec
+  - encodec
+  - wavlm
+  - conformal-prediction
+  - mlaad
+  - stopa
+preferred-citation:
+  type: unpublished
+  title: "CORE: Enhancing Open-Set Audio Deepfake Attribution with Neural Codec Residuals"
+  authors:
+    - family-names: Pujari
+      given-names: Aditya
+  year: 2027
+references:
+  - type: article
+    title: "PANDA: Prototype-based Anomaly Detection for Audio Deepfake Attribution"
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2606.10758"
+    notes: "The MLAAD v5 baseline these results are compared against (FPR95 3.36)."
+    authors:
+      - name: "Neamtu et al."
+  - type: article
+    title: "STOPA: A Database of Systematic VariaTion Of DeePfake Audio for Open-Set Source Tracing and Attribution"
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2509.24674"
+    notes: >-
+      The STOPA corpus and its zero-shot baseline (unknown-attack EER 16.43).
+      That figure is a different setting and no margin is claimed over it.
+    authors:
+      - name: "Chhibber et al."
